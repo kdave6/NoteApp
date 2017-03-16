@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+}
+/*make sure padding and border are included in the total width and height of the elements*/
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    overflow: hidden;
+    font-size: 14px;
+    color: #6b5959;
+}
+
+div {
+    display: block;
+}
+
+#note-container {
+    overflow: hidden;
+    width: 90%;
+    height: 80%;
+    margin: 3% auto 1%;
+    padding: 5px 10px;
+    background-color: rgba(192, 192, 192, 0.16);
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+    #note-container div#note-header {
+        height: 13%;
+        border-bottom: 1px solid aqua;
+    }
+
+    #note-container div#note-main {
+        width: 100%;
+        height: 80%;
+    }
+
+#note-main ul {
+    list-style-type: none;
+    padding: 0;
+    padding-top: 3%;
+}
+
+#note-main li {
+    margin-bottom: 2px;
+    border-bottom: 1px solid aqua;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+    #note-main li:hover, .activeLi {
+        background-color: #0099cc;
+        border-right: 6px solid red;
+    }
+
+.note-list {
+    width: 36%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+    .note-list ul li {
+        cursor: pointer;
+    }
+
+    .note-list span {
+        display: inline-block;
+        width: 90%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+
+.addNote {
+    margin: 2%;
+}
+
+.note-content {
+    width: 63%;
+    height: 100%;
+    border-left: 3px solid red;
+}
+
+    .note-content div {
+        margin: 10px;
+    }
+
+        .note-content div#note-details {
+            height: 68%;
+        }
+
+div#note-details div {
+    min-height: 20%;
+    cursor: pointer;
+}
+
+div#note-details #detail-title {
+    border-bottom: 1px solid purple;
+}
+
+.title {
+    font-weight: bold;
+}
+
+#note-options {
+    bottom: 0px;
+    margin-top: 1%;
+    text-align: right;
+    border: 1px solid purple;
+}
+
+    #note-options div {
+        margin: 1%;
+    }
+
+.dvMessage {
+    margin: 0 auto;
+    width: 30%;
+}
+
+textarea#detail-title {
+    width: 100%;
+    height: 20%;
+}
+
+textarea#detail-note {
+    width: 100%;
+    height: 80%;
+}
+
+.add-note-bttn {
+    position: relative;
+    left: 0px;
+    bottom: 0px;
+}
+
+/*helper CSS*/
+.top-border {
+    border-top: 1px solid purple;
+}
+
+.place-left {
+    float: left;
+}
+
+.place-right {
+    float: right;
+}
+
+.float-clear:after, .float-clear:before {
+    clear: both;
+}
+
+.red {
+    background-color: #ffdddd;
+    border-left: 6px solid #f44336;
+}
+
+.green {
+    background-color: #ddffdd;
+    border-left: 6px solid #4CAF50;
+}
+
+.blue {
+    background-color: #e7f3fe;
+    border-left: 6px solid #2196F3;
+}
+
+.yellow {
+    background-color: #ffffcc;
+    border-left: 6px solid #ffeb3b;
+}

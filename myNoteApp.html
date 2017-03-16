@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="My Note App">
+    <meta name="keywords" content="HTML5,CSS,JavaScript,jQuery">
+    <meta name="author" content="Kinjal Dave">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Note App
+    </title>
+    <script
+        src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous">
+    </script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" type="text/css" href="main.css" />
+
+</head>
+<body>
+    <div id="note-container">
+        <div id="note-header">
+            <h1>My Notes</h1>
+        </div>
+        <div id="note-main">
+            <div class="note-list place-left">
+                <a href='#' class="addNote place-right" id="add-note">Add Note</a>
+                <ul id="notes">
+                </ul>
+            </div>
+            <div class="note-content place-right">
+                <div id="note-details">
+                </div>
+                <div id="note-options">
+                    <div class="place-left">
+                        <input type="radio" name="colorOption" value="red" checked />
+                        <label>Red</label>
+
+                        <input type="radio" name="colorOption" value="blue" />
+                        <label>blue</label>
+
+                        <input type="radio" name="colorOption" value="green" />
+                        <label>green</label>
+
+                        <input type="radio" name="colorOption" value="yellow" />
+                        <label>yellow</label>
+                    </div>
+                    <div class="place-right"><a href='#' id="bttn-delete">Delete </a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dvMessage" id="message" />
+
+
+    <script src="main.js"></script>
+</body>
+</html>
