@@ -12,3 +12,10 @@ Technology Stack:
 2. CSS
 3. Vanilla javascrpt and 
 4. jQuery
+
+Installation guide: 
+1. Clone or download the repository.
+2. Please keep all the files in the same folder 
+3. Open the myNoteapp.html file in your browser. 
+
+This app has been fully tested on the chrome browser.
